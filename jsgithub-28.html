@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        var dizi = [1,2, 3, 4, 5, 3, 7, 8, 9,10];
+        console.log("dizi içerisindeki elemanlar");
+        console.log(dizi);
+        var tek_dizi = dizi.filter(tek);
+        console.log("dizideki tek sayıların oluşturduğu yeni dizi");
+        console.log(tek_dizi);
+        var cift_dizi = dizi.filter(cift);
+        console.log("dizideki cift sayıların oluşturduğu yeni dizi");
+        console.log(cift_dizi);
+        function tek(elemnt, index, array) {
+            return elemnt%2 !==0;
+        }
+        function cift(elemnt, index, array) {
+            return elemnt % 2 === 0;
+        }
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
