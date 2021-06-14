@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        var dizi = [2, 3, 4, 5, 3, 7, 8, 9];
+        var toplam = 0;
+        console.log("dizi içerisindeki elemanlar");
+        console.log(dizi);
+        dizi.forEach(carp);
+        console.log("dizi elemanları 2 ile çarpıldı");
+        console.log(dizi)
+        dizi.forEach(topla);
+        console.log("dizi elemanları toplamı: "+ toplam);
+        function carp(element, index, array) {
+            array[index] = 2 * element;
+        }
+        function topla(element,index,array) {
+         toplam += element;
+        }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
