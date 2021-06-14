@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raşit Emin'in Javascript Dersi</title>
+</head>
+<body>
+    <div class="cerceve">
+        <div class="baslik">
+            <p>Son Girilen Sayı :</p>
+            <h2 id="sonGirdi"></h2>
+        </div>
+        <div class="butonDiv">
+            <button id="yeniSayiButton" type="button">Yeni Sayı Gir</button>
+        </div>
+        <div class="liste">
+            <h5>Girilen Sayı Listesi</h5>
+            <table id="liste">
+                <tr>
+                    <th>Girilen Sayı</th>
+                    <th>Sayı Aciklaması</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var say = "";
+        var sayilar = [];
+        function sayiKontrol(say) {
+            var mesaj = "";
+            if(say==undefined || say==""){
+                return alert("Lütfen Doğru Bir Sayı Giriniz");
+            }
+            if (say >= 0 && say < 10) {
+                mesaj = "Girilen sayı tek basamaklı";
+            } else if (say >= 10 && say < 100) {
+                mesaj = "Girilen sayı çift basamaklı";
+            } else if (say >= 100 && say < 1000) {
+                mesaj = "Girilen sayı 3 basamaklı";
+            } else if (say >= 1000 && say < 10000) {
+                mesaj = "Girilen sayı 4 basamaklı";
+            } else {
+                mesaj = "Girilen sayının basamak değeri 4 den büyük";
+            }
+            var eleman = [say, mesaj];
+            listeGuncelle(eleman);
+        }
+        function sayiGir() {
+            return prompt("pozitif bir tam sayı giriniz:");
+        }
+        function listeGuncelle(param) {
+            var liste = document.getElementById("liste");
+            var sonGirdiElement = document.getElementById("sonGirdi");
+            var tr = document.createElement("tr");
+            for (let index = 0; index < param.length; index++) {
+                var td = document.createElement("td");
+                td.append(param[index]);
+                tr.appendChild(td);
+            }
+            liste.append(tr);
+            sonGirdiElement.innerHTML = param[0];
+        }
+        function olayTanimla() {
+            var buton = document.getElementById("yeniSayiButton");
+            buton.addEventListener("click", function() {
+                olayCalistir();
+            });
+        }
+        function olayCalistir() {
+            say = sayiGir();
+            sayiKontrol(say);
+        }
+        function calistir() {
+            olayTanimla();
+        }
+        calistir();
+    </script>
+</body>
+</html>
