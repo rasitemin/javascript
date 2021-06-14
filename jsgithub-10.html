@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        var sayi = prompt("asallık testi için bir sayı giriniz");
+        if (sayi > 2) {
+            var bolenMax = Math.floor(Math.sqrt(sayi));
+            var bolen = 2;
+            var sonuc = "Sayısı asal"
+            while (bolen <= bolenMax) {
+                if (sayi % bolen === 0) {
+                    sonuc = "Sayısı asal değil";
+                    break;
+                }
+                bolen++;
+            }
+            console.log(sayi + " " + sonuc);
+        } else {
+            console.log("0,1 ya da negatif sayılar asal olmaz");
+        }
+        </script>
+    </head>
+    <body>
+    </body>
+
+</html>
