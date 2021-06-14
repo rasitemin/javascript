@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        var dizi = new Array(20) ;
+        var rnd;
+        for (var i = 0; i <dizi.length;) {
+            rnd = Math.round(Math.random()*19+1);
+            for (var j = 0; j <dizi.length; j++) {
+                if (dizi[j] === rnd) {
+                    break;
+                }
+                if (j === dizi.length - 1) {
+                    dizi[i] = rnd;
+                    i++;
+                }
+            }
+        }
+        console.log(dizi);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
