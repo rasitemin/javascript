@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        var dizi = [1,2, 3, 4, 5, 3, 7, 8, 9,10];
+        console.log("dizi içerisindeki elemanlar");
+        console.log(dizi);
+        var tekCift = dizi.map(test);
+        console.log("tekCift dizisi ");
+        console.log(tekCift);
+        function test(elemnt, index, array) {
+            if (elemnt % 2== 0) {
+                return "Ç";
+            } else { return "T";}
+        }
+        </script>
+    </head>
+    
+</html>
