@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        var dizi = [2, 3, 4, 5, 3, 7, 8, 9];
+        console.log("dizi içerisindeki elemanlar");
+        console.log(dizi);
+        dizi.every(test);
+        console.log("dizi içerisindeki 5'e bölünebilen ilk değer");
+        console.log("index no:" + index_+", değeri= " + dizi[index_]);
+        function test(element, index, array) {
+            index_ = index;
+            return element % 5 !== 0;
+        }
+        </script>
+    </head>
+   
+</html>
