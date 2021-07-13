@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * Tarih İşlemleri - Date Object
+         */
+        let date= new Date();
+        // şu anki tarih ve saat bilgisinin tanımlanmış oluyoruz.
+        // console.log(date);
+
+
+       /** 
+        * Get Kullanımı
+        * Nesne oluşturulduğunda herhangi bir yeni bilgi set edilmediyse güncel bilgileri alır
+        * 
+        */ 
+    //    console.log("Ayın Kaçıncı Günü:" + date.getDate());
+    //    console.log("Haftanın Kaçıncı Günü:" + (Number(date.getDay()) + 1));
+    //    console.log("Hangi Ay: " + (Number(date.getMonth()) + 1));
+    //    console.log("Yıl: " + date.getFullYear());
+    //    console.log("Saat: " + date.getHours());
+    //    console.log("Dakika: " + date.getMinutes());
+    //    console.log("Saniye: " + date.getSeconds());
+
+    //    console.log(date.getTime());
+       /**
+        * Milisaniye cinsinden değer verir.
+        * Milisaniye değer 1978 yılından itibaren başlayarak verir.
+        * 
+        */
+
+        /**
+         * SET kullanımı
+         */
+        date.setDate(27);
+        date.setMonth(0);
+        date.setHours(10);
+        // console.log(date.getHours());
+
+        // var appointmentDate= new Date(2025,0,27,7,0,0,30);
+        // console.log(appointmentDate);
+
+        var oldDate= new Date("1/27/2007");
+        console.log(oldDate);
+
+        /**
+         * İki Tarih Arası Geçen zamanı Bulmak
+         */
+        var startDate = new Date(1994, 3, 18);
+        var finishDate = new Date(2021, 3, 18);
+        var result = finishDate - startDate;
+        // milisaniye olarak sonuç döner.
+
+        var saniye= result / 1000; // Her 1000 ms 1 saniye
+        var dakika = saniye / 60;
+        var saat = dakika /60;
+        var gün = saniye / 24;
+
+
+       startDate= new Date(2007, 1,27);
+       finishDate= new Date(2021, 7, 15);
+       /**
+        * Özet
+        * 
+        * 2021 - 2020 = 1;
+        * 1 x 12 = 12
+        * 12 - 5 = 7
+        * 7 + 3 = 10
+        */
+       var sonuc;
+       sonuc = (finishDate.getFullYear() - startDate.getFullYear());
+       sonuc *= 12;
+    sonuc -= finishDate.getMonth();
+       sonuc += startDate.getMonth();
+       console.log(Math.abs(sonuc));
+       
+        // Yaş Heasplama Yöntemi
+
+    </script>
+    
+</body>
+</html>
