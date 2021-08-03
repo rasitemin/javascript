@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        alert("Merhaba Dünya!"); //string değer
+        alert(150)// İntecır değer
+        */
+/*
+        console.log("Konsol Kullanımı"); //string
+        console.log(150); // number /Integer
+        console.log(150.5); //number /float ondalıklı sayı gösterimi
+        console.log("150");// string
+        console.log(true)// Boolean true ya da false
+        console.log(false) // boolean true ya da false
+        console.log([1, 2, 3, 4]); // Dizi göstergesi
+        console.warn("Uyarı vermek istediğinde");
+        console.error("Hata Oluştuğunda ve de hata görünümünde");
+
+        console.clear(); // Konsol temizleme
+        */
+
+
+       //Değişkenler veri tutuculardır.
+
+
+      /* var ad= "Raşit";
+       console.log(ad);*/
+
+       //Değişkenler nasıl temizlenir?
+
+       // Sayısal bir ifade ile değişken tanımlanamaz.
+       
+      // var 1sayi=25;// şeklinde bir tanımlama yapılmaz.   
+
+    //  var sayi1 = 25;
+
+     /*var _sayi1 = 25;
+     // _ ile tanımlanan değişkenler Geçici değişkenler olarak adlandırılır.
+
+
+
+
+
+     // Javascript de dahili  komutlar camelCase Kurallar ile yazılır.
+     // kelimeden oluşuyorsa ilk kelime küçük harfle başlar ve diğre kelimeler küçük harfle başlar.
+
+
+
+     var fullName;*/
+
+
+     // snake case => full_name _ile kelimeler ayrılıyor.
+     // Kebap Case => full-name -ile kelimeler ayrılıyor.
+     // Hungarion Notation
+     // var iToplam; i harfi intager tamsayı değeri tutuluğunu ifade eder.
+     // var sName; s harfi string bir değer tutulduğunu ifade ediyor.
+
+     /*console.log(fullName);
+
+
+     var universityName = "İstanbul Yıldız Teknik Üniversitesi";
+     console.log(universityName);
+     universityName= " Erciyes Üniversitesi";
+     console.log(universityName);*/
+
+
+     //var-let-const değişken tanımlamanın farkı nedir?
+
+     // let ile oluşturulan bir değişken sadece oluşturuluduğu süsülü parantrezler arasından erişilir.
+
+     // Block Scope özelliği denir.
+     //let ile tanımlanan bir değişkeni tekrar tanımlayınız.
+     //let ile tanımlanan bir değişkenin değerini güncelleyebiliriz.
+     // let ile tanımlanan bir değişkeni tekrar tanımlayınız.
+     // let ile tanımlanan bir değişkenin değerini güncelleyebiliriz.
+
+/*
+     let fullName = "Raşit Emin";
+    //  let fullName = "öztürkoğlu";
+    fullName = "Öztürkoğlu";
+     console.log(fullName);*/
+
+
+
+     // var ise erişilebilir durumdadır.
+     // bu özelliğine function scope denir.
+     // var ile tanımlanan bir değişkeni tekrar tanımlayabiliriz ve güncelleyebiliriz.
+
+
+    //  var fullName= "Raşit Emin";
+    //  var fullName= "öZTÜRKOĞLU";
+    //  fullName = "Raşit";
+    //  console.log(fullName);
+
+
+    
+    //  {
+    //      let deger;
+
+    //      for(let i=0; i<3; i++)
+    //      {
+             
+
+    //           deger = i;
+
+    //      }
+    //      console.log(deger);
+
+    //  }
+     
+
+    //      for(var i=0; i<3; i++)
+    //      {
+             
+
+    //          var deger = i;
+
+    //      }
+    //      console.log(deger);
+    //     }
+     
+    //  blockScopekullanımı();
+    //  let test;
+    //  function test1()
+    //  {
+    //       test="Eğitim";
+    //  }
+    //  function test2()
+    //  {
+    //       test="Eğitim 2";
+
+    //  }
+    //  test1();
+    //  test2();
+    //   console.log(test);
+
+
+
+// const = sabit
+//  Block Scope
+// Oluşturulan değişkenin değeri daha sonradan güncellenemez / değiştirilemez.
+// Başlangıç değeri atanmalı
+
+// const firstName="Raşit";
+// firstName ="Ayfer";
+
+
+
+// Değişken Tipleri Ve Değişken Tipini Kontrol Etme
+// 1- Primitive(Sıfat) Types
+// 2- Referance(Referans) Types => Objects olarakta kaynaklarda görülebilir
+
+// Primitive (Sıfat) types
+
+// const lastName="Özen";
+// console.log(typeof lastName); //string
+
+
+// const age = 26;
+// console.log(typeof age); //Number integer
+
+
+// var price = 7.5;
+// console.log(typeof price); // number float
+
+
+// let isAdmin = false;
+// console.log(typeof isAdmin); //boolean
+
+
+// var ad;
+// console.log(typeof ad);
+
+// let name;
+// console.log(typeof name);
+
+
+// Referance (Referans) Typres
+
+
+// Object - Nesne Tanımlama
+
+var person = {
+    firstName: "Sercan",
+    lastName: "Özen",
+    age: 26,
+    email: "rasitemin18@gmail.com",
+    dizi: [1, 2, 3, 4],
+    adres: {
+        il: "İstanbul",
+        ilçe: "Kağıthane",
+        postCode: 34868
+    }
+}
+
+console.log(typeof person); //object
+console.log(typeof person.firstName) // nesne içerisindeki ulaşma
+
+
+// Array => Dizi
+
+var person =["Sercan", "Ahmet", "Büşra", 15];
+console.log(typeof persons); // object
+
+
+// Date Object Tarih Tanımlama
+
+var date = new Date();
+console.log(date);
+console.log(typeof date); // object
+
+// Function Fonksiyon Tanımlama
+var fonksiyon = function ()
+{
+    return 1 + 2;
+}
+console.log(typeof fonksiyon); //function
+console.log(fonksiyon());
+
+
+
+
+    </script>
+    
+</body>
+</html>

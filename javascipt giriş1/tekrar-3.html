@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * Opartörler
+         */
+
+         /**
+          * 1- Aritmetik Operatörler
+          */
+         var sonuc;
+         var sayi1 = 10;
+         var sayi2 = 7;
+
+        //  sonuc = sayi1 + sayi2;
+        //  sonuc = sayi1 - sayi2;
+        //  sonuc = sayi1 * sayi2;
+        //  sonuc = sayi1 / sayi2;
+        //  sonuc = sayi1 % sayi2; // Bölme İşleminde Kalanı Veriyor
+        //  console.log(sayi1 + "' İn " + sayi2 + "' ye Modu:'  " + sonuc)
+
+         //sonuc = sayi1++; //Önce Ata sonra arttır
+        // sonuc = ++sayi1; // Önce Arttır sonra ata
+
+        // console.log(sonuc);
+
+        // sonuc = sayi1--; //Önce ata sonra eksilt
+        // sonuc = --sayi; //Önce eksilt sonra ata
+        // console.log(sonuc);
+
+        /**
+         * 2- Atama Operatörleri
+         */
+        // sonuc = 5;
+        // sonuc += sayi1; // aynı anlama gelirler
+        // sonuc= sonuc + sayi1;
+
+        //sonuc -= sayi1;
+        //sonuc = sonuc - sayi1;
+
+        // sonuc *= sayi1;
+        // sonuc = sonuc * sayi1;
+
+        // sonuc /= sayi1;
+        // sonuc = sonuc / sayi1;
+
+        // sonuc %= sayi1;
+        // sonuc = sonuc % sayi1;
+
+        /**
+         * 3- Karşılaştırma Operatörleri
+         */
+         // sonuc = sayi1 > sayi2;
+         // sonuc = sayi1 < sayi2;
+
+        //  sonuc= sayi1 >= sayi2; // büyük veya eşit mi?
+        //  sonuc= sayi1 <= sayi2; // küçük veya eşit mi?
+
+        /**
+         * == ile === arasındaki fark nedir?
+         */
+        // sonuc = sayi1 == sayi2;
+        sonuc = sayi1 === sayi2;
+
+
+        /**
+         * 10 == 10 true
+         * 10 == "10" true
+         * 10 === 10 true
+         * 10 === "10" false
+         * sebebi ise değerler aynı ancak türleri farklı olduğu için
+         * === false dönmektedir.
+         */
+
+         /**
+          * Değil Operatörü => !=
+          * !== => Tür Kontrol Ediyor
+          */
+
+        //   sonuc = sayi1 != sayi2;
+        // sonuc = sayi1 !== sayi2;
+
+        /**
+         * 3-Mantıksal Operatörler
+         * && Ve
+         * || veya
+         * ! Değil
+         */ 
+
+         // && Ve - And operatörü
+         //         True      False => FALSE 
+         sonuc= (sayi1 > sayi2) && (sayi1 > 10);
+
+         /**
+          * true x false => false
+          * true x true => true
+          * false x false =>
+          */
+
+          sonuc= (sayi1 > sayi2) || (sayi1 > 10);
+
+          /**
+           * true x false => true
+           * false x true => true
+           * false x false => false
+           */
+
+           sonuc = !(sayi1 < sayi2);
+
+           /**
+            * !true => false 
+            * !false => true
+            */
+
+
+
+        console.log(sonuc);
+
+    </script>
+    
+</body>
+</html>

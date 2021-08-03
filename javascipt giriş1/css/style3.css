@@ -1,0 +1,9 @@
+*{ margin: 0px; border: 0px; } 
+body { padding: 10px;}
+
+div {width: 300px; height: 60px; background: #eee; border: 1px solid #ccc;}
+.gorunmez-div{visibility: hidden;}
+.seffaf-div {opacity: 0.7;}
+.seffaf-div2 {opacity: 0.7; color: #fff;
+background:url("../assets/download.jpg") top right;
+background-size: 80px 60px; }

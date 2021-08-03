@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title> Veri Giriş Tipleri</title>
+    </head>
+    <body>
+        <header>
+            <h3>Veri Giriş Tipleri</h3>
+            <hr>
+
+        </header>
+        <section class="createUser">
+            <form id="createUser" action="" method="get" enctype="multipart/form-data" autocapitalize="">
+               
+                <h4>Kullanıcı Kaydı</h4>
+            </header>
+           <div>
+               <label for="firstName">Adınız</label>
+               <input type="text" id="firstName" name="firstName" placeholder="Adınız">
+           </div>
+           <div>
+            <label for="lastName">Soyadınız</label>
+            <input type="text" id="lasttName" name="lasttName" placeholder="Soyadınız">
+        </div>
+        <div>
+            <label for="birthday">Doğum Tarihiniz</label>
+            <input type="text" id="birthday" placeholder=" Doğum Tarihiniz"
+            onfocus="(this.type='date')" onclick="(this.type='date')">
+        </div>
+        <div>
+            <label for="email">Email Adresinizi Giriniz</label>
+            <input type="email" name="email" id="email" placeholder="Email Adresiniz">
+        </div>
+        <div>
+            <label for="phone">Telefon Numarası</label>
+            <input type="tel" name="phone" id="phone" placeholder="(505)050 5400"
+            pattern="\([1-9]{3}\) [8-9]{7}">
+        </div>
+        <div>
+            <label for="number">Numara</label>
+            <input type="number" name="number" id="number" value="0">
+        </div>
+        <div>
+            <label for="renk">Renk Seçin</label>
+            <input type="color" name="renk" id="renk">
+        </div>
+        <div>
+            <label for="tarihSaat">Tarih ve Saat</label>
+            <input type="datetime-local" name="tarihSaat"
+            id="tarihSaat" placeholder=" Tarih Saat">
+        </div>
+        <div>
+            <label for="saat">Saat</label>
+            <input type="time" name="saat"
+            id="saat" placeholder="Saat">
+        </div>
+        <hr>
+        <header>
+            <h4>
+                Detaylı Tarih Seçiniz
+            </h4>
+        </header>
+        <hr>
+        <div>
+            <label for="weekSelect">Hafta Seçimi</label>
+            <input type="week" id="weekSelect" name="weekSelect" placeholder="Hafta Seçiniz">
+        </div>
+        <div>
+            <label for="monthSelect">Ay Seçimi</label>
+            <input type="month" id="monthSelect" name="monthSelect" placeholder="Ay Seçiniz">
+        </div>
+        <hr>
+        <header>
+            <h5>
+                Oran Seçimi
+            </h5>
+        </header>
+        <div>
+            <label for="oran">Oran Seçin</label>
+            <input type="range" name="oran" id="oran" min="0" value="50" max="100">
+        </div>
+        <div>
+            <label for="message">Mesajınız</label>
+            <textarea name="message" id="message" cols="38" rows="10" placeholder="Mesajınız" style=" resize: none;"></textarea>
+    
+        </div>
+        </form>
+        </section>
+    </body>
+</html>

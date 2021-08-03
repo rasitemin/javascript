@@ -1,0 +1,75 @@
+span { font: size 10px; padding-left: 10px; }
+#spanID { font-size: 20px;}
+.spanClass { font-size: 30px; }
+
+p {padding-left: 30px;}
+.divClass {background: #eee; margin-top: 5px;}
+.divim p {background: #eee;}
+.divim1 p {background: #eee;}
+.divim1, .divim2, .divim4 {background: #eee;}
+div.elementClass { font-size: 20px; }
+span.elementClass { font-size: 40px; }
+* { margin: 0px; padding: 0px; border: 0px; }
+[title=sebze] {background: #ccc;}
+input[type=text] { border: 1px solid #ccc; }
+* { margin: 0px; padding: 0px; border: 0px; }
+h1, h2 {color: #333; font: bold 23px arial, sans-serif; padding-bottom: 5px;}
+h2{ font-size: 18px;}
+p {font-size: 15px; color: #666; font-family: Verdana,  sans-serif; padding-bottom: 10px;}
+p.ilk-paragraf {font-size: 13px;}
+p.ikinci-paragraf {font-size: 13px;}
+p.ucunucu-paragraf {font-size: 13px; font-family: Tahoma, sans-serif;}
+.mavi {color: #1B9CDC;}
+.italik {font-style: italic;}
+.kalin {font-weight: bold;}
+* { margin: 0px; padding: 0px; border: 0px; }
+body { font-size: 15px; font-family: Tahoma, sans-serif;}
+
+h1 {letter-spacing: 2px; line-height: 50px;}
+h2 {letter-spacing: -2px; line-height: 40px; text-shadow: 1px 1px #ccc;}
+
+.alt-cizgi {text-decoration: underline;}
+.paragraf2 {text-transform: capitalize;}
+.buyuk-harf {text-transform: uppercase;}
+.yazi-golge {text-shadow: 1px 1px #aaa;}
+/* @font-face {
+    font-family: YaziTipiIsmi;
+    src: url(adres/yazi_tipi.tff);
+}
+p { font-family: 'YaziTipiIsmi'; font-size: 15px;} */
+
+* { margin: 0px; padding: 0px; border: 0px;}
+body { font-size: 15px; font-family: Tahoma, sans-serif;}
+div {width: 300px; height: 80px;}
+.div1 {background-color: rgb(145, 56, 56); }
+.div2 {
+    background: url(uyku.jpg);
+    background-size: 60px 40px;
+    color: #fff;
+}
+.div3 {
+    background: url(uyku.jpg);
+    background-size: 60px 40px;
+    background-repeat: no-repeat;
+    color: rgb(97, 31, 31);
+}
+.div4 {
+    background: url(uyku.jpg);
+    background-size: 60px 40px;
+    background-repeat: repeat-x;
+    color: #fff;
+}
+
+.div5 {
+    background: #ccc;
+    border: 1px solid #000;
+}
+.div6 {
+    background: #eee;
+    border: 1px dashed #111;
+    box-shadow: 0px 0px 10px #555;
+}
+.div7 {
+    background: #f1f1f1;
+    border: 1px dotted #555;
+}

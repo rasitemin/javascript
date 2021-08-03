@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Table kullanımı</title>
+
+    </head>
+    <body>
+        <table border="1" width="600px">
+            <thead>
+                <tr>
+                    <th>
+                        Başlık 1
+                    </th>
+                    <th>Başlık 2</th>
+                    <th>Başlık 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="right">Satır 1 Sütun1 </td>
+                    <td align="left" > Satır 1 Sütun2</td>
+                    <td align="center">Satır 1 Sütun3</td>
+                </tr>
+                <tr>
+                    <td>Satır 2 Sütun1</td>
+                    <td>Satır 2 Sütun2</td>
+                    <td rowspan="2" align="center">Satır 2 Sütun3</td>
+                </tr>
+                <tr> 
+                    <td>Satır 3 Sütun1</td>
+                    <td>Satır 3 Sütun2</td>
+                    <!-- <td>Satır 3 Sütun3</td> -->
+                </tr>
+                <tr>
+                    <td>
+                        Satır 4 Sütun3
+                    </td>
+                    <td colspan="2" align="center">Satır 4 Sütun1</td>
+                    <!-- <td>Satır 4 Sütun2</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
