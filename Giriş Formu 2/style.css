@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+     margin: 0; 
+    padding: 0;
+    background-color: white;
+    background: url(login_1.jpg);
+}
+.signup-form{
+   width: 400px;
+   height: 400px;
+   padding: 20px;
+   padding-right: 30px;
+   text-align: center;
+   /* background: url(paper.jpg); */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-60%,-60%);
+   overflow: hidden;
+   background-color: white;
+   border-radius: 4px;
+}
+.signup-form h3{
+    padding-right: 300px;
+    font-family: Roboto;
+    font-size: 15px;
+    display: inline-block;
+}
+
+
+ 
+.signup-btn{
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 10px 0px 10px 0px;
+    background-color: #2196f3;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    
+   
+    width: 100%;
+    
+    color: white;
+    
+    
+}
+.signup-gog{
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+    outline: none;
+    /* display: block; */
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+    
+   
+    width: 100%;
+}
+.txt{
+    margin-right: 40px;
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    
+   
+    width: 100%;
+}
+
+.signup-chec{
+    
+    float: left;
+    margin-top: 10px;
+}
+.signup-form label{
+    margin-right: 200px;
+    margin-bottom: 50px;
+}
+.signup-form a{
+    text-decoration: none;
+    color: black;
+   
+}
+.signup-btn:hover{
+    background-color: #1878c7;
+}
+.signup-form a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.signup-form #Forget{
+    float: right;
+}
+
+
+
+    
+
